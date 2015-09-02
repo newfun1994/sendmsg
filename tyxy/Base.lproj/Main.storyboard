@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--XYKDMM-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="XYKDMM" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfk-eu-I33">
+                                <rect key="frame" x="20" y="142" width="280" height="45"/>
+                                <color key="backgroundColor" red="0.043137254901960784" green="0.37647058823529411" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="txu-h6-WxT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="一键发送">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="action10001:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uer-kX-QTk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送xykdmm至" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lq0-6I-dlr">
+                                <rect key="frame" x="20" y="89" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F1H-6R-geB">
+                                <rect key="frame" x="195" y="85" width="105" height="29"/>
+                                <segments>
+                                    <segment title="10001"/>
+                                    <segment title="16300"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sendnum:" destination="vXZ-lx-hvc" eventType="valueChanged" id="lcI-iw-pJw"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9y-tU-1OT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7n-oq-oN0">
+                                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                        <items>
+                                            <navigationItem title="XYKDMM" id="gQm-N3-cMN"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="S7n-oq-oN0" firstAttribute="leading" secondItem="q9y-tU-1OT" secondAttribute="leading" id="Ri5-IO-PqO"/>
+                                    <constraint firstAttribute="bottom" secondItem="S7n-oq-oN0" secondAttribute="bottom" id="V4F-vU-z7z"/>
+                                    <constraint firstItem="S7n-oq-oN0" firstAttribute="width" secondItem="q9y-tU-1OT" secondAttribute="width" id="dbt-H1-n9W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mfk-eu-I33" firstAttribute="top" secondItem="lq0-6I-dlr" secondAttribute="bottom" constant="33" id="1Bm-nj-8uQ"/>
+                            <constraint firstItem="q9y-tU-1OT" firstAttribute="centerX" secondItem="Mfk-eu-I33" secondAttribute="centerX" id="40V-SY-LD5"/>
+                            <constraint firstItem="q9y-tU-1OT" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="4PY-Gl-4cR"/>
+                            <constraint firstItem="q9y-tU-1OT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="DSp-tV-mXz"/>
+                            <constraint firstItem="Mfk-eu-I33" firstAttribute="top" secondItem="F1H-6R-geB" secondAttribute="bottom" constant="29" id="G1n-jn-AIW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mfk-eu-I33" secondAttribute="trailing" constant="4" id="Kzx-PP-o6x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F1H-6R-geB" secondAttribute="trailing" constant="4" id="R4Y-Yu-mp9"/>
+                            <constraint firstItem="Mfk-eu-I33" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="122" id="TgH-tJ-9le"/>
+                            <constraint firstAttribute="centerX" secondItem="Mfk-eu-I33" secondAttribute="centerX" id="qh9-bm-eAe"/>
+                            <constraint firstItem="lq0-6I-dlr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="rjb-dz-TkP"/>
+                            <constraint firstItem="Mfk-eu-I33" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="vL8-J3-Hcf"/>
+                            <constraint firstItem="F1H-6R-geB" firstAttribute="top" secondItem="q9y-tU-1OT" secondAttribute="bottom" constant="21" id="zv9-em-yus"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="a6M-qD-6aE"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnsend" destination="Mfk-eu-I33" id="ouF-T3-2sT"/>
+                        <outlet property="numselect" destination="F1H-6R-geB" id="sTq-Gf-41z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="322"/>
+        </scene>
+    </scenes>
+</document>
